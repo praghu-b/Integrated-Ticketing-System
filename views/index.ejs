@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Integrated Ticketing System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="">
+        <img class="bg-img" src="assets/images/cities/pondicherry.jpg" alt="bg-img">
+        <div class="container">
+            <div class="row min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="col-10 col-lg-6">
+                    <h2 class="text-center mb-5">If you have card swipe it in the card reader,<br>Else you can enter your ID manually.</h2>
+                    <form class="row justify-content-center transparent mt-5" action="/verify" method="post">
+                        <div class="col-12">
+                            <label class="form-label mb-3 fw-bolder" for="id">Identity Number</label>
+                            <input class="form-control mb-3" name="id" type="text" id="id" placeholder="Enter Your ID" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label mb-3 fw-bolder" for="from">Pick Up</label>
+                            <input class="form-control mb-3" name="from" type="text" id="from" placeholder="Pickup Location" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label mb-3 fw-bolder" for="to">Drop Location</label>
+                            <input class="form-control mb-3" name="to" type="text" id="to" placeholder="Drop Location" required>
+                        </div>
+                        <div class="col-6 col-lg-4 text-center">
+                            <button class="btn btn-success w-100 mb-3">
+                                Verify
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

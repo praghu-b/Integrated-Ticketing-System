@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "integrated-ticketing-system",
+  "private_key_id": "d4e894663bf393e93057167d149c7e54ab20966b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCTC3XN7w7cjD9D\nlS8xgmXpvhqO490Qf+45g2zeBw7fU0MgOJLIg+lU+pfaJEvsID2T8FNJQt3qftxU\nmJDbCs2ajWQ4fdacHeGFIRPuIZKlLGFpXjC2ZkxdwtSPmqvelzafCzsZYk8vJH7F\nbHK45kcphqR+VTJHIbCQwuX3OtcJuzGwjM+HDd49ZXbKW02DbhdDe5HyrcW/pFUK\n0R6tlub/9breHobcPiVE2iBAXduHrZX5hEjkOBgFaXnIcZaeblF9NqZTh897IYkJ\ni9pXhOQ/Iz0y07WfkHdYYZlEey9rf6xKIQHIpsNhVBEcbBHguplZCM75Y0eXFHbN\nLGRU+NOXAgMBAAECggEAFmN/z9euyRjXhxg/Y8fpcYH+9DOwlJMN+BbRLCsh8hHw\n3gaPHtWq4MP4+/9byfuMtKo6XCTAujQPoxfJsng+HuKZWFqcow+Pp2AGc1MMS3bq\n7Aqp2xPPW9VO3QCdW5pleCjTGkXULabeYHvnKczyF9oG0K9zJM513ky2jAKa/EGX\nrqpiXDQwnoyrQFwxnZKBIHy/0/6zs3pEjIZerwMwMapjYFgXrDM/r2il6DaMlPjN\nLN4ufOd9q7vPfQrpvQyx2g26Ta1DvNJaJEO0GJf6fdl80Ztj+zjemG+M6y1W0NBE\nBsM34bLCjbws24iK5l6UnXKF1+zBAm4vQv7/aAhdOQKBgQDH+OkEl8jQo4yRTPTj\nImHtD2Nw5oWDFudxUgGG8HI2JELFGX1KOcpfrVWoZShbm3BY5cUPoZ1LObONQroC\n1Eui+61PI3qb++XeGFAXeCqkv3frOTwi9pv9Av+nPenrb+J125R/tw5/R/yYDsvy\nkaDq+hDHBdjtjUMii2a8n9dtPwKBgQC8Pk1SQ2rZA7tFFIk3puqQdxVCrNWycmap\ncE+/auVrgNONyCHvfq2Z/KQ751uaVZHICLF56LJcwQAF7LmfXGxDYGNSw78fM5lw\nM6vkAuVV1f/WOZIX3xqhu2WHLczmsmEemPNX1GQJ2V1bvKJ7+kjs7iwkXaKFQzdU\nQJXWHfALqQKBgH+psaFEAWjpMIFGfwROW/QKofJeyJeS1LisoNrzwAY+if3osurj\nEAaa0xeJVQV+q2+laHP9OjzfHnitQ7EwtQTc5ZyjStAwNWTfYqpJBfhdYAJkbLbp\nd1ZERtAPH7o1mH6jax9Jz1CEtYah06QNQo0gjftxCTdGurhgBHuhE9fjAoGBAIwS\nV/rEi7cb3beThl9Q5u3Ejp9keEcmdVnTZqPq6PfLjp/LseTCAG+63IJur2zyC14r\nidRK4J3AR0IhWiZI4Y5pJL8rRQX0oVIqQNeTiA8NBCfmAt2cd/asuOmTnQp05Wud\nKEXMlvv1MFDY1pcmMCmNOG9+9TXwRDV/MX94G2yxAoGBAKHz5ETK6wjj6SpS5W0d\n+h9dCYuUrIc2QxGsc/9hhjBS6Xa1mWfpBjWsq/tTPjZCWSjlI4Fo4V7QyoDWJLxG\nlb74N8s1/6mfsfsw9251rHACtAFa95XGUZH5aZXigPO28IFDRQjDnLmJNNJtZsR0\nNccfiowfGG2CVe/jH6NtNY7o\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-j3xl3@integrated-ticketing-system.iam.gserviceaccount.com",
+  "client_id": "112145499904955211182",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-j3xl3%40integrated-ticketing-system.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
