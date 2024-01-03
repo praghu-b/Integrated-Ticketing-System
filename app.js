@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.set('view engine', 'ejs')
 app.use('/',express.static(__dirname + '/public'))
-app.use('/node_modules', express.static('node_modules'))
+app.use('/node_modules', express.static(__dirname + '/node_modules'))
 app.set('views',__dirname + '/views')
 
 app.use('/verify', verifyID)
