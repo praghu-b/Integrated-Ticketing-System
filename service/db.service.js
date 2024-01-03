@@ -3,6 +3,7 @@ const db = fb.firestore();
 
 function getDataById(userIdToFind) {
     return new Promise((resolve, reject) => {
+        console.log('INSIDE getDataById()');
         db.collection('users').doc('id').get()
             .then(snapshot => {
                 console.log('Firestore Snapshot:', snapshot.data());

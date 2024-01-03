@@ -1,19 +1,8 @@
 const express = require('express')
-const router = express.Router()
-const { getDataById } = require('../service/db.service')
+const router = express()
+const verification = require('../controller/verification.controller')
 
-router.post('/',async (req, res) => {
-    console.log("REQ BODY:")
-    console.log(req.body)
-    try{
-        let id = req.body.id
-        const userDetails = await getDataById(id)
 
-        
-        res.render('success')
-    } catch(err) {
-        res.status(500)
-    }
-})
+router.post('/', verification)
 
 module.exports = router
