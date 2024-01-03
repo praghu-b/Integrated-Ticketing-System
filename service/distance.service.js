@@ -4,7 +4,7 @@ distance.key('AIzaSyBzKJ9azZXIY6omjVVxoxwwwiO_qKbwawc')
 distance.units('metric')
 
 function getDistanceTime(origins, destinations) {
-    
+    console.log('CALCULATING DISTANCE & DURATION...')
     return new Promise((resolve, reject) => {
       distance.matrix(origins, destinations, function (err, distances) {
         if (err) {
@@ -13,7 +13,6 @@ function getDistanceTime(origins, destinations) {
         if (!distances) {
           reject(err);
         }
-        console.log(distances);
         if (distances.status == "OK") {
           for (var i = 0; i < origins.length; i++) {
             for (var j = 0; j < destinations.length; j++) {

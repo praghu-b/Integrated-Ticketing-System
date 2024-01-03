@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket For Transportation</title>
+</head>
+<body style="font-family: 'Arial', sans-serif;background-color: #f4f4f4;color: #333;">
+
+    <div style="max-width: 600px;margin: 0 auto;padding: 20px;background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+        <h1 style="color: #007bff;text-align: center;">E-Ticket</h1>
+
+        <p>Your ticket details:</p>
+
+        <table style="width: 100%;border-collapse: collapse;margin-top: 20px;">
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Booking Id</td>
+                <td style="padding: 10px;border: 1px solid #ddd;">#<%= mailData.bookID %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Name</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.name %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Phone</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.phone %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Email</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.email %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">PickUp</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.origin %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Drop</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.destination %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Journey Date</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.date %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Distance</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.distance %> Km</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Duration</td>
+                <td style="padding: 10px;border: 1px solid #ddd;"><%= mailData.duration %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Ticket Fare</td>
+                <td style="padding: 10px;border: 1px solid #ddd;">₹<%= mailData.price %></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;padding: 10px;border: 1px solid #ddd;">Card Balance</td>
+                <td style="padding: 10px;border: 1px solid #ddd;">₹<%= mailData.balance %></td>
+            </tr>
+        </table>
+
+        <p style="margin-top: 20px;">Thank you for choosing our transportation service.</p>
+
+    </div>
+
+</body>
+
+</html>
