@@ -1,4 +1,4 @@
-const fb = require('../config');
+const fb = require('../config/config');
 const db = fb.firestore();
 
 
