@@ -17,7 +17,10 @@
         <div class="container">
             <div class="row min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="col-10 col-lg-6 text-white transparent">
-                    <h2 class="text-center"><img src="assets/images/icons/booking_checked.png" style="width: 50px;" alt="confirmCheck"> Get On Board!!!<br>You'll receive your E-ticket via <%= email %>.</h2>
+                    <h2 class="text-center" style="text-wrap:pretty !important;"><img src="assets/images/icons/booking_checked.png" style="width: 50px;" alt="confirmCheck"> Get On Board!!!<br>You'll receive your E-ticket via<span style="font-size: smaller;"> <%= email %></span>.</h2>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="<%= qrCodeDataUrl %>" alt="QR_Code">
                 </div>
             </div>
         </div>

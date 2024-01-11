@@ -3,6 +3,9 @@ const distance = require('google-distance-matrix')
 distance.key('AIzaSyBzKJ9azZXIY6omjVVxoxwwwiO_qKbwawc')
 distance.units('metric')
 
+
+// CALCULATING DISTANCE: The distance & duration between the origin & destination will be 
+// calculated using google's distance API.
 function getDistanceTime(origins, destinations) {
     console.log('CALCULATING DISTANCE & DURATION...')
     return new Promise((resolve, reject) => {

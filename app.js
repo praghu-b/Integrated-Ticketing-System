@@ -14,6 +14,7 @@ app.set('views',__dirname + '/views')
 
 app.use('/verify', verifyID)
 
-app.get('/', (req, res) => { res.render("index")})
+app.get('/', (req, res) => { res.render('index')})
+app.get('/ticket', (req, res) => { res.render('eTicket', { data } )})
 
 module.exports = app

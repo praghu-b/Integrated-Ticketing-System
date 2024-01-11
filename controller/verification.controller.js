@@ -1,12 +1,14 @@
 const { getDataById, deductMoney, saveBooking } = require('../service/db.service')
 const { getDistanceTime } = require('../service/distance.service')
 const { sendTicket } = require('../service/mail.service')
+const { generateQRCode } = require('../service/qrcode.service')
 
 
 module.exports = async (req, res) => {
     console.log("USER INPUTS:\n", req.body)
     try{
 
+        // USER INPUT DATA
         const data = {
             id: req.body.id,
             origin: req.body.from,
@@ -37,6 +39,7 @@ module.exports = async (req, res) => {
         console.log(`CURRENT BALANCE: ${currentBalance}`)
 
 
+        // BOOKING DATA
         var bookingDetails = {
             bookID: bookID,
             email: userDetails.mail,
@@ -58,6 +61,10 @@ module.exports = async (req, res) => {
         const eTicket = await sendTicket(bookingDetails)
 
 
+        // GENERATING QR CODE
+        const qrCodeDataUrl = await generateQRCode(bookingDetails)
+
+
         // SAVING BOOKING HISTORY
         try {
             saveBooking(bookingDetails)
@@ -67,7 +74,7 @@ module.exports = async (req, res) => {
 
 
         // RENDERING BOOKING SUCCESS PAGE
-        res.render('success', { email: userDetails.mail})
+        res.render('success', { email: userDetails.mail, qrCodeDataUrl})
     } catch(err) {
         res.status(500)
     }

@@ -1,8 +1,9 @@
-const fb = require('../config/config');
-const db = fb.firestore();
+const fb = require('../config/config'); // IMPORT: Importing config.js file which is used to connect
+const db = fb.firestore();              //to a specific database.
 
 
-// GET USER DETAILS
+// VERIFYING USER ID: This module will verify user in the database and fetch the user's details
+// which will be used for the booking & payment process.
 function getDataById(userIdToFind) {
     return new Promise((resolve, reject) => {
         console.log('VERIFYING USER ID...');
@@ -26,7 +27,8 @@ function getDataById(userIdToFind) {
 }
 
 
-// DEDUCTS MONEY
+// PROCESSING PAYMENT: Deducts a specified amount from the user's balance in the 'users' collection
+// in the database.
 function deductMoney(userIdToDeduct, amountToDeduct) {
     return new Promise((resolve, reject) => {
         console.log('PROCESSING PAYMENT...');
@@ -69,7 +71,8 @@ function deductMoney(userIdToDeduct, amountToDeduct) {
 }
 
 
-// STORING BOOKING HISTORY
+// STORING BOOKING DETAILS: Stores booking information in the database with
+// 'history' as collection & with bookID as the document ID.
 function saveBooking(bookingData) {
     return new Promise((resolve, reject) => {
         console.log("STORING BOOKING DETAILS...")
@@ -88,5 +91,6 @@ function saveBooking(bookingData) {
     })
 }
 
-
+// EXPORT: It expose the file all over the project folder,
+// so that the modules can be accessed whenever needed.
 module.exports = { getDataById, deductMoney, saveBooking };
