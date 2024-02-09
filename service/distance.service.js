@@ -1,6 +1,6 @@
 const distance = require('google-distance-matrix')
 
-distance.key('AIzaSyBzKJ9azZXIY6omjVVxoxwwwiO_qKbwawc')
+distance.key('')
 distance.units('metric')
 
 
